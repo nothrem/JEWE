@@ -1,0 +1,51 @@
+/* CSS Document */
+body {background-color:#0B0C08; color: #fff; margin: 3em auto 1ex; width:85%;}
+p {text-align: justify;  text-indent: 2em;}
+hr {width:85%; margin:1.5em auto;}
+hr.none {border:0px none;}
+h1 {padding-top:1em;}
+h2, hr {clear:both}
+h1, h2, h3, h4 { color: #C2B668;}
+p.right {float:right; margin:0; text-align: right;}
+.myname {float:right; position: relative; top:-3em;}
+.myname p {text-align:right; padding:0;margin:0;}
+.myname, .others {clear: both;}
+p.left {float:left; margin:0; text-align: left;}
+.note {display: block; margin: 1em 0; border: medium #333 dotted; padding: .5em; color:#fff;}
+.undernote {margin: 0 3em 1em; padding: .5em 3em; color:#333; border-top: 1px #000 dotted; font-size:.8em; text-indent:0; }
+sup {font-size:.8em; color:#333}
+.big {font-size:2em;}
+.small {font-size:.8em;}
+a:link, a:visited {color:#cb6}
+a:link:hover, a:visited:hover {color:#763}
+a.totop {color:#cb6;}
+a.totop:hover {color:#763;}
+td {padding: 0 1em; }
+
+table {margin:0 auto;}
+
+/* obrázky */
+div.img, div.img_left, div.img_right {width:250px; text-align:center; border:#333 2px dotted;padding:.5em;}
+div.img {display:inline}
+div.img_left {float:left; margin: .5em 1em .5em .5em; clear:left;}
+div.img_right {float:right; margin: .5em 0 .5em 1em; clear:right;}
+div.img_left span, div.img_right span {display:block;font-size:.9em; margin-top:.5em}
+
+/* includy */
+div.include {border:1px solid black; padding:1ex;}
+div.include p.inc_head {font-size:120%;font-weight:bold; margin:0;}
+
+/* navigace */
+.totop {float:right; font-size:.8em; margin:0; padding:0;}
+.top h2, .top ul, .top li {display:table-cell; margin:0; padding:.2em .5em;}
+.top ul {padding:0; vertical-align:center; border:0px none;}
+
+/* menu */
+div#menu {font-size: 1.5em;}
+div#menu {}
+
+/* zápatí */
+#history th {vertical-align: top;}
+
+#supported_browsers { margin: 1em auto 0; color:gray; text-align:center; font-size:60%;}
+#supported_browsers a { padding: 0 1em; }

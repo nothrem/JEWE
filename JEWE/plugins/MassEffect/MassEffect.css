@@ -1,0 +1,41 @@
+p.ME.bug {
+  font-size: 90%;
+  font-style: italic;
+  color: #F33;
+}
+
+em {
+  font-style: normal;
+  font-weight: bold;
+  border: 1px solid;
+  padding: 0 3px;
+}
+
+p.ME.system {
+  margin:0;
+  padding:0;
+  padding-left: 2em;
+}
+
+p.ME.misto {
+  margin:0;
+  padding:0;
+  padding-left: 4em;
+}
+
+p.ME.misto.sub {
+  padding-left: 6em;
+}
+p.ME.ukol {
+  margin:0;
+  padding:0;
+  padding-left: 8em;
+}
+
+p.ME.nalez {
+  margin:0;
+  padding:0;
+  padding-left: 8em;
+}
+
+

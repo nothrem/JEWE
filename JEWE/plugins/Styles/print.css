@@ -1,0 +1,19 @@
+/* CSS Document */
+@media print {
+.noprint, .totop, .top {display:none}
+
+body {width:auto; margin:0; padding: 0; font-size:90%;}
+
+h1#print_logo {display:block!important; text-align: center;}
+
+.secret, .spoiler, .note {border-color:black!important;}
+
+div#menu { display: none!important; }
+
+* {
+  color:black!important; 
+}
+a {
+  text-decoration:none!important;
+}
+}

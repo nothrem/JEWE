@@ -1,0 +1,4 @@
+.secret {border: 2px white dotted; padding:.3em;}
+.spoiler {border: 2px red dashed; padding: .2em;}
+.artefakt, .relikvie, .unlock {margin: 0; padding: 0;}
+.artefakt em, .relikvie em, .unlock em {font-weight: bold; font-style: normal;}

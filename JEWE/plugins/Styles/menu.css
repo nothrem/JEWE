@@ -1,0 +1,16 @@
+/* CSS Document */
+div#top {margin:0 auto; text-align: center;}
+div#top img {padding:0;margin:0 auto; border:0;}
+h1#print_logo {display:none;}
+
+/* MENU */
+div#top ul {border:0; display:block; text-align:center; margin:0 auto; padding:0;}
+div#top ul li {display: inline; padding:0.5ex;}
+div#top ul li.ukol {padding:0 .5ex;}
+div#top a:link, div#top a:visited {color:#cb6;}
+div#top a:link:hover, div#top a:visited:hover {color:#763;} 
+
+div#top .header {font-size: 2em; display:block;}
+div#top .back   {font-size: .8em; display:block;}
+
+div#top #copyright {text-align:center; margin: 1em 0 0 0;}
