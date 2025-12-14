@@ -1,0 +1,113 @@
+
+#kapitola Co je JEWE?
+<p>JEWE je PHP engine <i>(pro generování HTML s CSS a JS)</i> pro jednodušší psaní návodů ke hrám. Nejde o klasický <i>redakční systém</i> ale spíše o sadu souborů, které se jednoduchou editací dají uvést do požadovaného stavu a funkčnosti.</p>
+<p>Idea byla založena na projektu pro generování PDF ze souborů, které se podobaly současné verzi JEWE, na kterém jsem pracoval v roce 2003 pro Západočeskou Univerzitu. <br><i>Pro zajímavost, GitHub Flavored Markdown, představený v roce 2008 a je založený na Markdown z roku 2004. Standardizovaná verze Markdown je z roku 2014, resp. GFM z roku 2017)</i></p>
+<p>Ke stažení na GitHubu pod <a href="https://github.com/nothrem/JEWE">nothrem/JEWE</a></p>
+
+#kapitola Historie
+
+#nadpis verze HL2:EO 0.1 (2006)
+ (ještě nešlo o JEWE, ale pouze o jednoduchý engine pro <a href="http://half-life.nothrem.cz/e1/">návod na hru Half-Life 2: Episode One</a>)
+
+ + automatické vkládání a formátování obrázků podle klíčového řádku #IMG
+
+ + základní styly a formátování
+
+#nadpis verze JEWE 1.0 (2007; první verze)
+ + JEWE je zkratka z 'Jade Empire Waklthrough Engine' - vznikl jako engine pro <a href="http://jade.nothrem.cz/">návod na hru Jade Empire</a>
+
+ * vylepšená práce s obrázky
+
+ + automatické formátování nadpisů podle klíčových řádků #kapitola a #úkol
+
+ + automatické generování menu a dynamická změna podle kapitol a úkolů
+
+#nadpis verze JEWE 1.1
+
+ * verze použitá pro <a href="http://tra.nothrem.cz/">návod na Tomb Raider Anniversary</a>  (zachování jména i vzhledu)
+
+ + schopnost rozeznat a naformátovat libovolná klíčová slova (kromě obrázků a kapitol)
+
+ * menu změněno na dvousloupcové
+
+#nadpis verze JEWE 1.2
+ * verze použitá pro <a href="http://bioshock.nothrem.cz/">návod na hru Bioshock</a> a <a href="http://half-life.nothrem.cz/e2/">návod na hru Half-Life2: Episode Two</a>
+
+ * menu opět dvouřádkové
+
+ * zjednodušená grafika
+
+#nadpis verze JEWE 1.5
+ * pouze jako beta JEWE 2.0
+
+#nadpis verze JEWE 2.0 (2008)
+ + zcela nové zpracování
+
+ + engine založený na pluginech (vlastní engine obsahuje jen minimum funkčnosti)
+
+ + typy pluginů
+
+    - Interpreter (zpracování klíčových slov a překlad na HTML)
+
+    - Observer (reakce na dané události)
+
+        * on start (oznamuje vlastní začátek zpracování dokumentu)
+
+        * on header (vyvolán při zpracování hlavičky HTML)
+
+        * on body start (vyvolán před zpracováním dokumentu)
+
+        * on body end (vyvolán před koncem zpracování dokumentu)
+
+ - pluginy
+
+    + Parser (načtení obsahu stránky z konfigurace a její parsování)
+
+    + Title (generování titulku stránky z konfigurace)
+
+    + Chapters (správa kapitol dokumentu)
+
+    + Menu (generování menu z kapitol)
+
+    + Styles (automatické načítání CSS stylů)
+
+    + Browsers (zobrazení podporovaných prohlížečů - IE7, FF2, FF3, Opera9.5, Safari3)
+
+
+#nadpis verze JEWE 3.0 (2025)
+ + kód upraven pro PHP 8.5
+
+ + podpora PHP namespace
+
+ + HTML kód aktualizován na HTML5 (podporované prohlížeče změněny na Edge, Safari 5+, Firefox 5+, Chrome 30+, Opera 11+)
+
+ + kód zveřejněn na <a href="https://github.com/nothrem/JEWE">GitHubu</a>
+
+#nadpis verze JEWE 3.1 (2026)
+
+ + podpora řádkového (v2.0) i sloupcového (v1.1) menu
+
+ + podpora grafiky pro orámování stránky (v1.0/v1.1)
+
+#kapitola Další verze
+
+#nadpis Plán
+ * typ pluginů
+
+    - systémové (poskytují funkčnost pro jiné pluginy)
+
+    - administrační (umožňují upravovat konfiguraci či jiné části/pluginy)
+
+    - řádkové (zpracovávají každou řádku)
+
+ * pluginy
+
+    - vysvětlivky (určená slova zobrazují popis po najetí myší)
+
+    - odkazy (slova v textu mohou odkazovat na jiné části)
+
+ * překlady (texty z souborů *.lang - pluginy?)
+
+ * cachování (stránka projde skriptem jen jednou, pak se uloží do TEMP)
+
+ * autoload (načítání částí návodu on-line - menší režie, rychlejší stahování)
